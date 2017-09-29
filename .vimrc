@@ -90,6 +90,7 @@ NeoBundle 'scrooloose/syntastic'
 " ファイルをtree表示してくれる
 NeoBundle 'scrooloose/nerdtree'
 
+NeoBundle "ctrlpvim/ctrlp.vim"
 
 
 "----------------------------------------------------------
@@ -183,3 +184,21 @@ let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['javascript'],
                            \ 'passive_filetypes': [] }
+
+
+
+
+
+
+
+
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
+if &term == "xterm-256color"
+    colorscheme molokai
+    hi Comment ctermfg=102
+    hi Visual  ctermbg=236
+endif
+
+autocmd vimenter * NERDTree
+
