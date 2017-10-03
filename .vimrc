@@ -202,3 +202,7 @@ endif
 
 autocmd vimenter * NERDTree
 
+
+" 隠しファイルをデフォルトで表示させる
+let NERDTreeShowHidden = 1
+

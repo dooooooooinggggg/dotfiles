@@ -83,3 +83,21 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+export PATH=/usr/local/bin:$PATH
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(rbenv init -)"
+
+export GOPATH=$HOME/golang
+export PATH=$PATH:$GOPATH/bin
+
+export PATH=/usr/local/opt/openssl/bin:$PATH
+
+#export HOMEBREW_CASK_OPTS=“—appdir=/Applications”
+
+alias vagssh='vagrant up;vagrant ssh'
