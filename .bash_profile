@@ -7,7 +7,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 
-export GOPATH=$HOME/golang
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 export PATH=/usr/local/opt/openssl/bin:$PATH
