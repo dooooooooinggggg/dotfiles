@@ -7,7 +7,7 @@ export ZSH=/Users/ishikawatatsunori/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="xiong-chiamiov-plus"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -98,6 +98,15 @@ export PATH=$PATH:$GOPATH/bin
 
 export PATH=/usr/local/opt/openssl/bin:$PATH
 
-#export HOMEBREW_CASK_OPTS=“—appdir=/Applications”
+#export HOMEBREW_CASK_OPTS="—appdir=/Applications"
+
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+# LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
 
 alias vagssh='vagrant up;vagrant ssh'
+alias allgitpull='sh ~/ShellScript/allgitpull.sh'
+alias cat='pygmentize'
+
+plugins=(git themes)
+source ~/.oh-my-zsh/oh-my-zsh.sh
+
