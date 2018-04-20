@@ -1,6 +1,6 @@
 # dotfiles
 
-```shell
+```sh
 
 $ cd ~
 $ git clone https://github.com/dooooooooinggggg/dotfiles.git

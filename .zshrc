@@ -8,6 +8,7 @@ export ZSH=/Users/ishikawatatsunori/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="xiong-chiamiov-plus"
+# ZSH_THEME="gnzh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -105,8 +106,11 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 alias vagssh='vagrant up;vagrant ssh'
 alias allgitpull='sh ~/ShellScript/allgitpull.sh'
-alias cat='pygmentize'
+alias ccat='pygmentize'
 
 plugins=(git themes)
 source ~/.oh-my-zsh/oh-my-zsh.sh
+# theme jonathan
+
+# alias vim='/usr/bin/vim'
 
