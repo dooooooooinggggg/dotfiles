@@ -15,5 +15,7 @@
     },
     "window.zoomLevel": 0,
     "files.trimTrailingWhitespace": true,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    "workbench.iconTheme": "eq-material-theme-icons"
 }
