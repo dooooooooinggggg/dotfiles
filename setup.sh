@@ -13,7 +13,7 @@ ln -sf ~/dotfiles/.bashrc ~/.bashrc
 ln -sf ~/dotfiles/.zsh* ~/
 
 # vscode
-ln -sf ~/dotfiles/vscode/setting.json ~/Library/Application\ Support/Code/User/
+ln -sf ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 
 source ~/.bash_profile
 source ~/.zshrc
