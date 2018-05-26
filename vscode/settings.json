@@ -17,5 +17,11 @@
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
     "workbench.colorTheme": "Material Theme Ocean High Contrast",
-    "workbench.iconTheme": "eq-material-theme-icons"
+    "workbench.iconTheme": "eq-material-theme-icons-ocean",
+    "ruby.lint": {
+        "rubocop": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "ctrlchar-remover.pattern": "[\\u0008]",
+    "editor.formatOnSave": true
 }

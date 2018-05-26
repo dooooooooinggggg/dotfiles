@@ -114,3 +114,6 @@ source ~/.oh-my-zsh/oh-my-zsh.sh
 
 # alias vim='/usr/bin/vim'
 
+autoload -U compinit
+compinit -u
+
