@@ -23,5 +23,6 @@
     },
     "gitlens.historyExplorer.enabled": true,
     "ctrlchar-remover.pattern": "[\\u0008]",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "team.showWelcomeMessage": false
 }
