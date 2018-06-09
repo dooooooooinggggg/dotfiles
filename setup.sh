@@ -17,3 +17,7 @@ ln -sf ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 
 source ~/.bash_profile
 source ~/.zshrc
+
+git clone https://github.com/dooooooooinggggg/ShellUtil.git
+mkdir ~/OSS
+

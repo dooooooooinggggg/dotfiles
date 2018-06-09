@@ -105,7 +105,7 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 # LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
 
 alias vagssh='vagrant up;vagrant ssh'
-alias allgitpull='sh ~/ShellScript/allgitpull.sh'
+alias allgitpull='sh ~/ShellUtil/allgitpull.sh'
 alias ccat='pygmentize'
 
 plugins=(git themes)
