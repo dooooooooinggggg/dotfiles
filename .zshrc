@@ -84,37 +84,35 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+##########
+# export #
+##########
 
 export PATH=/usr/local/bin:$PATH
-
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
-
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
 export PATH=/usr/local/opt/openssl/bin:$PATH
-
 #export HOMEBREW_CASK_OPTS="—appdir=/Applications"
-
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/opt/cython/bin:$PATH"
 # LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+
+eval "$(pyenv init -)"
+eval "$(rbenv init -)"
 
 alias vagssh='vagrant up;vagrant ssh'
 alias allgitpull='sh ~/ShellUtil/allgitpull.sh'
 alias hellobrew='sh ~/ShellUtil/brew.sh'
 alias helloapt='sh ~/ShellUtil/apt.sh'
+# alias ccat='pygmentize' # macにはすでに，ccatがある．
 
-macにおいては，
-# alias ccat='pygmentize'
-
+# settings for oh-my-zsh
 plugins=(git themes)
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
+# 補完を効かせるためのもの
 autoload -U compinit
 compinit -u
-
-export PATH="/usr/local/opt/cython/bin:$PATH"
