@@ -7,7 +7,6 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="xiong-chiamiov-plus"
 ZSH_THEME="gnzh"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -108,14 +107,14 @@ alias vagssh='vagrant up;vagrant ssh'
 alias allgitpull='sh ~/ShellUtil/allgitpull.sh'
 alias hellobrew='sh ~/ShellUtil/brew.sh'
 alias helloapt='sh ~/ShellUtil/apt.sh'
-alias ccat='pygmentize'
+
+macにおいては，
+# alias ccat='pygmentize'
 
 plugins=(git themes)
 source ~/.oh-my-zsh/oh-my-zsh.sh
-# theme jonathan
-
-# alias vim='/usr/bin/vim'
 
 autoload -U compinit
 compinit -u
 
+export PATH="/usr/local/opt/cython/bin:$PATH"

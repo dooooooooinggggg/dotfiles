@@ -24,5 +24,6 @@
     "gitlens.historyExplorer.enabled": true,
     "ctrlchar-remover.pattern": "[\\u0008]",
     "editor.formatOnSave": true,
-    "team.showWelcomeMessage": false
+    "team.showWelcomeMessage": false,
+    "materialTheme.autoApplyIcons": false
 }
