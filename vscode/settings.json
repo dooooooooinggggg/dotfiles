@@ -25,5 +25,6 @@
     "ctrlchar-remover.pattern": "[\\u0008]",
     "editor.formatOnSave": true,
     "team.showWelcomeMessage": false,
-    "materialTheme.autoApplyIcons": false
+    "materialTheme.autoApplyIcons": false,
+    "git.autofetch": true
 }
