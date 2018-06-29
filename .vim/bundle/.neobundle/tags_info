@@ -3,6 +3,9 @@ indentLine
 lightline.vim
 molokai
 neobundle.vim
+neocomplete.vim
+neosnippet
+neosnippet-snippets
 nerdtree
 syntastic
 vim-trailing-whitespace
