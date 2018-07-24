@@ -107,6 +107,7 @@ alias vagssh='vagrant up;vagrant ssh'
 alias allgitpull='sh ~/ShellUtil/allgitpull.sh'
 alias hellobrew='sh ~/ShellUtil/brew.sh'
 alias helloapt='sh ~/ShellUtil/apt.sh'
+alias pingcheck='sh ~/ShellUtil/pingping.sh'
 # alias ccat='pygmentize' # macにはすでに，ccatがある．
 
 # settings for oh-my-zsh
