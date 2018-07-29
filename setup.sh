@@ -1,4 +1,9 @@
+# private repository
+# git clone https://github.com/dooooooooinggggg/ShellUtil.git ~/ShellUtil
+# sh ~/ShellUtil/pkg_manager_init/init_brew.sh
 
+# pyenv
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
 
 # vim settings
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
@@ -15,8 +20,7 @@ ln -sf ~/dotfiles/.zsh* ~/
 # vscode
 ln -sf ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 
+mkdir ~/OSS
+
 # source ~/.bash_profile
 source ~/.zshrc
-
-git clone https://github.com/dooooooooinggggg/ShellUtil.git ~/ShellUtil
-mkdir ~/OSS
