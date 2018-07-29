@@ -111,6 +111,7 @@ alias helloapt='sh ~/ShellUtil/apt.sh'
 alias pingcheck='sh ~/ShellUtil/pingping.sh'
 # alias ccat='pygmentize' # macにはすでに，ccatがある．
 alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
+alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
 
 # settings for oh-my-zsh
 plugins=(git themes)
