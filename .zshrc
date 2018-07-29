@@ -98,6 +98,7 @@ export PATH=/usr/local/opt/openssl/bin:$PATH
 #export HOMEBREW_CASK_OPTS="—appdir=/Applications"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/opt/cython/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 # LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
 
 eval "$(pyenv init -)"
@@ -109,6 +110,7 @@ alias hellobrew='sh ~/ShellUtil/brew.sh'
 alias helloapt='sh ~/ShellUtil/apt.sh'
 alias pingcheck='sh ~/ShellUtil/pingping.sh'
 # alias ccat='pygmentize' # macにはすでに，ccatがある．
+alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
 
 # settings for oh-my-zsh
 plugins=(git themes)
