@@ -16,7 +16,6 @@
     "window.zoomLevel": 0,
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
-    "workbench.colorTheme": "Material Theme Ocean High Contrast",
     "workbench.iconTheme": "eq-material-theme-icons-ocean",
     "ruby.lint": {
         "rubocop": true
@@ -26,5 +25,8 @@
     "editor.formatOnSave": true,
     "team.showWelcomeMessage": false,
     "materialTheme.autoApplyIcons": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    "editor.renderControlCharacters": true,
+    "materialTheme.fixIconsRunning": false
 }
