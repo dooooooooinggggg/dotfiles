@@ -7,7 +7,7 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="gnzh"
+ZSH_THEME="half-life"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -120,3 +120,7 @@ source ~/.oh-my-zsh/oh-my-zsh.sh
 # 補完を効かせるためのもの
 autoload -U compinit
 compinit -u
+
+if [ ${ZSH_THEME} = "half-life" ]; then
+    PROMPT=$'%{$purple%}%n%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} \nλ%{$reset_color%} ';
+fi
