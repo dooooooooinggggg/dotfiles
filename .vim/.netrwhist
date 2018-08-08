@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/ishikawatatsunori/Candle/Knowsia/cakephp'
-let g:netrw_dirhist_2='/Users/ishikawatatsunori/Candle/Knowsia/cakephp/app'
-let g:netrw_dirhist_3='/Users/ishikawatatsunori/Candle/Knowsia/cakephp'
-let g:netrw_dirhist_4='/Users/ishikawatatsunori/Candle/Knowsia/cakephp/scripts'
-let g:netrw_dirhist_5='/Users/ishikawatatsunori/Candle/Knowsia/cakephp'
-let g:netrw_dirhist_6='/Users/ishikawatatsunori/Candle/Knowsia/cakephp/app'
-let g:netrw_dirhist_7='/Users/ishikawatatsunori/Candle/Knowsia/cakephp/app/Controller'
