@@ -1,0 +1,32 @@
+brew cask install \
+android-studio \
+atom \
+copay \
+cyberduck \
+dropbox \
+emacs \
+firefox \
+geektool \
+github-desktop \
+google-chrome \
+google-drive \
+google-earth \
+google-hangouts \
+grandperspective \
+icc \
+iterm2 \
+java \
+mactex \
+messenger \
+minikube \
+openoffice \
+r-app \
+sequel-pro \
+slack \
+sourcetree \
+thunderbird \
+vagrant \
+virtualbox \
+visual-studio-code \
+wireshark \
+xquartz
