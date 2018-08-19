@@ -9,6 +9,9 @@ elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
   sh pkg_manager_init/aptlist.sh
 fi
 
+# gdb
+ln -sf ~/dotfiles/.gdbinit ~/
+
 #bash
 mv ~/.bash_profile ~/.bash_profile_orig
 mv ~/.bashrc ~/.bashrc_orig
