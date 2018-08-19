@@ -1,41 +1,37 @@
-# private repository
-# git clone https://github.com/dooooooooinggggg/ShellUtil.git ~/ShellUtil
-# sh ~/ShellUtil/pkg_manager_init/init_brew.sh
-# mkdir ~/OSS
 
-# pyenv
-git clone git://github.com/yyuu/pyenv.git ~/.pyenv
-
-# vim settings
+sh shells/default.sh
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.vim ~/.vim
 
-# install oh my zsh
-wget http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
-
-# shell config
+if [ "$(uname)" == 'Darwin' ]; then
+  sh pkg_manager_init/init_brew.sh
+  sh pkg_manager_init/init_brew_cask.sh
+elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
+  sh pkg_manager_init/aptlist.sh
+fi
 
 #bash
+mv ~/.bash_profile ~/bash_profile_orig
+mv ~/.bashrc ~/bashrc_orig
 ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
 # zsh
-ln -sf ~/dotfiles/.zsh* ~/
+mv ~/.zshrc ~/.zshrc_orig
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
 
 # vscode
+extensions=$(cat vscode/plugins)
+for extension in $extensions; do
+    echo "install $extension ..."
+    code --install-extension $extension
+done
+mv ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/orig_settings.json
 ln -sf ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 
-
-#########################
-# /etc/shellsに以下を追記 #
-#########################
-vi /etc/shells
-# /usr/local/bin/zsh
+echo "/usr/local/bin/zsh" >> /etc/shells
 
 # change default shell
 chsh -s /usr/local/bin/zsh
+# enter password
 
-
-# 対応しているシェルに合わせてsourceを実行し、設定を読み込む
-# source ~/.bash_profile
-source ~/.zshrc
+exit
