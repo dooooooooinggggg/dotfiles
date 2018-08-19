@@ -10,8 +10,8 @@ elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
 fi
 
 #bash
-mv ~/.bash_profile ~/bash_profile_orig
-mv ~/.bashrc ~/bashrc_orig
+mv ~/.bash_profile ~/.bash_profile_orig
+mv ~/.bashrc ~/.bashrc_orig
 ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
 # zsh
@@ -31,7 +31,9 @@ ln -sf ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 echo "/usr/local/bin/zsh" >> /etc/shells
 
 # change default shell
-chsh -s /usr/local/bin/zsh
+if [ "$(uname)" == 'Darwin' ]; then
+  chsh -s /usr/local/bin/zsh
+fi
 # enter password
 
 exit
