@@ -24,11 +24,12 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
 # vscode
 if [ "$(uname)" == 'Darwin' ]; then
-  extensions=$(cat vscode/plugins)
-  for extension in $extensions; do
-      echo "install $extension ..."
-      code --install-extension $extension
-  done
+  # extensions=$(cat vscode/plugins)
+  # for extension in $extensions; do
+  #     echo "install $extension ..."
+  #     code --install-extension $extension
+  # done
+  vscode/plugins.sh
   mv ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/orig_settings.json
   ln -sf ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 fi
