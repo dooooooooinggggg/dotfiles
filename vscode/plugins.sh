@@ -1,102 +1,102 @@
-13xforever.language-x86-64-assembly
-2gua.rainbow-brackets
-aaron-bond.better-comments
-ajshort.latex-preview
-akamud.vscode-theme-onedark
-attilabuti.brainfuck-syntax
-austin.code-gnu-global
-azemoh.one-monokai
-azemoh.theme-onedark
-bajdzis.vscode-database
-basdp.language-gas-x86
-bitlang.cobol
-bung87.rails
-bung87.vscode-gemfile
-chenxsan.vscode-standardjs
-CoenraadS.bracket-pair-colorizer
-dakshmiglani.hex-to-rgba
-DavidAnson.vscode-markdownlint
-davidhouchin.whitespace-plus
-donjayamanne.githistory
-dracula-theme.theme-dracula
-dunstontc.dark-plus-syntax
-eamodio.gitlens
-eg2.vscode-npm-script
-emmanuelbeziat.vscode-great-icons
-Equinusocio.vsc-material-theme
-eriklynd.json-tools
-felipecaputo.git-project-manager
-felixfbecker.php-debug
-felixfbecker.php-intellisense
-formulahendry.auto-close-tag
-formulahendry.code-runner
-gccfeli.vscode-lua
-gerane.Theme-azure
-glen-84.sass-lint
-HookyQR.beautify
-Hridoy.rails-snippets
-huizhou.githd
-HvyIndustries.crane
-idleberg.hopscotch
-idleberg.nsis
-ikappas.phpcs
-itryapitsin.Scala
-James-Yu.latex-workshop
-jbenden.c-cpp-flylint
-jchannon.csharpextensions
-jinmingjian.sde
-johnpapa.winteriscoming
-justusadam.language-haskell
-k--kato.docomment
-Kasik96.swift
-kdarkhan.mips
-keroc.hex-fmt
-kokororin.vscode-phpfmt
-leizongmin.node-module-intellisense
-Leopotam.csharpfixformat
-linyang95.php-symbols
-lkytal.FlatUI
-mathiasfrohlich.Kotlin
-mattn.Lisp
-mikegleasonjr.theme-go
-mitaki28.vscode-clang
-MS-CEINTL.vscode-language-pack-ja
-ms-mssql.mssql
-ms-python.python
-ms-vscode.cpptools
-ms-vscode.csharp
-ms-vscode.Go
-ms-vscode.sublime-keybindings
-ms-vscode.Theme-MarkdownKit
-ms-vsts.team
-mshr-h.veriloghdl
-Nuuf.theme-hackershaze
-p1c2u.docker-compose
-pawelgrzybek.bimbo-theme
-PeterJausovec.vscode-docker
-phoityne.phoityne-vscode
-PKief.material-icon-theme
-rebornix.ruby
-redhat.java
-rintoj.blank-line-organizer
-rlovelett.vscode-swift-language
-robertohuertasm.vscode-icons
-satokaz.vscode-bs-ctrlchar-remover
-shanoor.vscode-nginx
-shd101wyy.markdown-preview-enhanced
-slevesque.vscode-hexdump
-SolarLiner.linux-themes
-Stephanvs.dot
-tht13.python
-vangware.dark-plus-material
-vscjava.vscode-java-debug
-vscjava.vscode-java-pack
-vscjava.vscode-java-test
-vscjava.vscode-maven
-whizkydee.material-palenight-theme
-xabikos.JavaScriptSnippets
-xaver.clang-format
-yzhang.markdown-all-in-one
-zaynyatyi.hexmachina-generator
-zhuangtongfa.Material-theme
-zxh404.vscode-proto3
+code --install-extension 13xforever.language-x86-64-assembly
+code --install-extension 2gua.rainbow-brackets
+code --install-extension aaron-bond.better-comments
+code --install-extension ajshort.latex-preview
+code --install-extension akamud.vscode-theme-onedark
+code --install-extension attilabuti.brainfuck-syntax
+code --install-extension austin.code-gnu-global
+code --install-extension azemoh.one-monokai
+code --install-extension azemoh.theme-onedark
+code --install-extension bajdzis.vscode-database
+code --install-extension basdp.language-gas-x86
+code --install-extension bitlang.cobol
+code --install-extension bung87.rails
+code --install-extension bung87.vscode-gemfile
+code --install-extension chenxsan.vscode-standardjs
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension dakshmiglani.hex-to-rgba
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension davidhouchin.whitespace-plus
+code --install-extension donjayamanne.githistory
+code --install-extension dracula-theme.theme-dracula
+code --install-extension dunstontc.dark-plus-syntax
+code --install-extension eamodio.gitlens
+code --install-extension eg2.vscode-npm-script
+code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension eriklynd.json-tools
+code --install-extension felipecaputo.git-project-manager
+code --install-extension felixfbecker.php-debug
+code --install-extension felixfbecker.php-intellisense
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.code-runner
+code --install-extension gccfeli.vscode-lua
+code --install-extension gerane.Theme-azure
+code --install-extension glen-84.sass-lint
+code --install-extension HookyQR.beautify
+code --install-extension Hridoy.rails-snippets
+code --install-extension huizhou.githd
+code --install-extension HvyIndustries.crane
+code --install-extension idleberg.hopscotch
+code --install-extension idleberg.nsis
+code --install-extension ikappas.phpcs
+code --install-extension itryapitsin.Scala
+code --install-extension James-Yu.latex-workshop
+code --install-extension jbenden.c-cpp-flylint
+code --install-extension jchannon.csharpextensions
+code --install-extension jinmingjian.sde
+code --install-extension johnpapa.winteriscoming
+code --install-extension justusadam.language-haskell
+code --install-extension k--kato.docomment
+code --install-extension Kasik96.swift
+code --install-extension kdarkhan.mips
+code --install-extension keroc.hex-fmt
+code --install-extension kokororin.vscode-phpfmt
+code --install-extension leizongmin.node-module-intellisense
+code --install-extension Leopotam.csharpfixformat
+code --install-extension linyang95.php-symbols
+code --install-extension lkytal.FlatUI
+code --install-extension mathiasfrohlich.Kotlin
+code --install-extension mattn.Lisp
+code --install-extension mikegleasonjr.theme-go
+code --install-extension mitaki28.vscode-clang
+code --install-extension MS-CEINTL.vscode-language-pack-ja
+code --install-extension ms-mssql.mssql
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension ms-vscode.csharp
+code --install-extension ms-vscode.Go
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension ms-vscode.Theme-MarkdownKit
+code --install-extension ms-vsts.team
+code --install-extension mshr-h.veriloghdl
+code --install-extension Nuuf.theme-hackershaze
+code --install-extension p1c2u.docker-compose
+code --install-extension pawelgrzybek.bimbo-theme
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension phoityne.phoityne-vscode
+code --install-extension PKief.material-icon-theme
+code --install-extension rebornix.ruby
+code --install-extension redhat.java
+code --install-extension rintoj.blank-line-organizer
+code --install-extension rlovelett.vscode-swift-language
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension satokaz.vscode-bs-ctrlchar-remover
+code --install-extension shanoor.vscode-nginx
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension slevesque.vscode-hexdump
+code --install-extension SolarLiner.linux-themes
+code --install-extension Stephanvs.dot
+code --install-extension tht13.python
+code --install-extension vangware.dark-plus-material
+code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-java-test
+code --install-extension vscjava.vscode-maven
+code --install-extension whizkydee.material-palenight-theme
+code --install-extension xabikos.JavaScriptSnippets
+code --install-extension xaver.clang-format
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension zaynyatyi.hexmachina-generator
+code --install-extension zhuangtongfa.Material-theme
+code --install-extension zxh404.vscode-proto3
