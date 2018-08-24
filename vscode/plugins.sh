@@ -58,6 +58,7 @@ code --install-extension linyang95.php-symbols
 code --install-extension lkytal.FlatUI
 code --install-extension mathiasfrohlich.Kotlin
 code --install-extension mattn.Lisp
+code --install-extension mechatroner.rainbow-csv
 code --install-extension mikegleasonjr.theme-go
 code --install-extension mitaki28.vscode-clang
 code --install-extension MS-CEINTL.vscode-language-pack-ja
