@@ -13,7 +13,7 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
     "workbench.iconTheme": "eq-material-theme-icons-ocean",

@@ -62,7 +62,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 
 " カラースキームmolokai
-NeoBundle 'tomasr/molokai'
+" NeoBundle 'tomasr/molokai'
+NeoBundle 'jdkanani/vim-material-theme'
+" Plug 'kaicataldo/material.vim'
 
 " ステータスラインの表示内容強化
 NeoBundle 'itchyny/lightline.vim'
@@ -122,9 +124,6 @@ NeoBundleCheck
 "----------------------------------------------------------
 " molokaiの設定
 "----------------------------------------------------------
-if neobundle#is_installed('molokai') " molokaiがインストールされていれば
-    colorscheme molokai " カラースキームにmolokaiを設定する
-endif
 
 set t_Co=256 " iTerm2など既に256色環境なら無くても良い
 syntax enable " 構文に色を付ける
@@ -185,20 +184,13 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['javascript'],
                            \ 'passive_filetypes': [] }
 
-
-
-
-
-
-
-
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
-if &term == "xterm-256color"
-    colorscheme molokai
-    hi Comment ctermfg=102
-    hi Visual  ctermbg=236
-endif
+" if &term == "xterm-256color"
+"     colorscheme molokai
+"     hi Comment ctermfg=102
+"     hi Visual  ctermbg=236
+" endif
 
 autocmd vimenter * NERDTree
 
@@ -206,3 +198,8 @@ autocmd vimenter * NERDTree
 " 隠しファイルをデフォルトで表示させる
 let NERDTreeShowHidden = 1
 
+
+
+set background=dark
+" colorscheme material // これは本当にやりたいやつ
+colorscheme material-theme
