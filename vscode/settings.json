@@ -2,7 +2,6 @@
     "sublimeTextKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -13,7 +12,7 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
     "workbench.iconTheme": "eq-material-theme-icons-ocean",
@@ -22,11 +21,12 @@
     },
     "gitlens.historyExplorer.enabled": true,
     "ctrlchar-remover.pattern": "[\\u0008]",
-    "editor.formatOnSave": true,
     "team.showWelcomeMessage": false,
     "materialTheme.autoApplyIcons": false,
     "git.autofetch": true,
     "workbench.colorTheme": "Material Theme Ocean High Contrast",
     "editor.renderControlCharacters": true,
-    "materialTheme.fixIconsRunning": false
+    "materialTheme.fixIconsRunning": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
 }
