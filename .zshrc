@@ -122,5 +122,5 @@ autoload -U compinit
 compinit -u
 
 if [ ${ZSH_THEME} = "half-life" ]; then
-    PROMPT=$'%{$purple%}%n%{$reset_color%} [%{$purple%}$HOST%{$reset_color%}] in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} \nλ%{$reset_color%} ';
+    PROMPT=$'%{$purple%}%n%{$reset_color%} {%{$purple%}$HOST%{$reset_color%}} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} \nλ%{$reset_color%} ';
 fi
