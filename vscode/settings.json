@@ -15,7 +15,7 @@
     "window.zoomLevel": 0,
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
-    "workbench.iconTheme": "eq-material-theme-icons-ocean",
+    "workbench.iconTheme": "eq-material-theme-icons",
     "ruby.lint": {
         "rubocop": true
     },
@@ -28,5 +28,7 @@
     "editor.renderControlCharacters": true,
     "materialTheme.fixIconsRunning": false,
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true
 }
