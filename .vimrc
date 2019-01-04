@@ -61,8 +61,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " ここに追加したいVimプラグインを記述する・・・・・・②
 
 
-" カラースキームmolokai
-" NeoBundle 'tomasr/molokai'
 NeoBundle 'jdkanani/vim-material-theme'
 " Plug 'kaicataldo/material.vim'
 
@@ -91,7 +89,6 @@ NeoBundle 'scrooloose/syntastic'
 
 " ファイルをtree表示してくれる
 NeoBundle 'scrooloose/nerdtree'
-
 NeoBundle "ctrlpvim/ctrlp.vim"
 
 
@@ -101,9 +98,6 @@ call neobundle#end()
 " ファイルタイプ別のVimプラグイン/インデントを有効にする
 filetype plugin indent on
 
-
-" 未インストールのVimプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定・・・・・・③
-NeoBundleCheck
 
 
 
@@ -194,12 +188,10 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 autocmd vimenter * NERDTree
 
-
 " 隠しファイルをデフォルトで表示させる
 let NERDTreeShowHidden = 1
-
-
-
 set background=dark
 " colorscheme material // これは本当にやりたいやつ
-colorscheme material-theme
+colorscheme vim-material-theme
+" 未インストールのVimプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定・・・・・・③
+NeoBundleCheck
