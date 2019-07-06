@@ -15,7 +15,7 @@
     "window.zoomLevel": 0,
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
-    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "ruby.lint": {
         "rubocop": true
     },
@@ -30,5 +30,11 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true
+    "gitlens.views.lineHistory.enabled": true,
+    "material-icon-theme.activeIconPack": "angular",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "csharp.format.enable": false
 }
