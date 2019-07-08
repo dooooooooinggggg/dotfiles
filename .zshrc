@@ -7,7 +7,8 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="half-life"
+# ZSH_THEME="half-life"
+ZSH_THEME="gnzh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -88,12 +89,17 @@ source $ZSH/oh-my-zsh.sh
 # export #
 ##########
 
-export PATH=/usr/local/bin:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH=/usr/local/bin:$PATH
+export RBENV_ROOT="$HOME/.pyenv"
+export PATH="$RBENV_ROOT/bin:$PATH"
+
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+
 export PATH=/usr/local/opt/openssl/bin:$PATH
 #export HOMEBREW_CASK_OPTS="—appdir=/Applications"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
@@ -110,7 +116,7 @@ alias hellobrew='sh ~/ShellUtil/brew.sh'
 alias helloapt='sh ~/ShellUtil/apt.sh'
 alias pingcheck='sh ~/ShellUtil/pingping.sh'
 # alias ccat='pygmentize' # macにはすでに，ccatがある．
-alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
+# alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
 alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
 
 # settings for oh-my-zsh
@@ -124,3 +130,9 @@ compinit -u
 if [ ${ZSH_THEME} = "half-life" ]; then
     PROMPT=$'%{$purple%}%n%{$reset_color%} {%{$purple%}$HOST%{$reset_color%}} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} \nλ%{$reset_color%} ';
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc'; fi
