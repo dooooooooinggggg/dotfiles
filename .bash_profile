@@ -37,3 +37,5 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=/usr/local/opt/openssl/bin:$PATH
 
 neofetch
+
+export PATH="$HOME/.cargo/bin:$PATH"
