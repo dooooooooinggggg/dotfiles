@@ -17,7 +17,9 @@
     "editor.renderWhitespace": "all",
     "workbench.iconTheme": "material-icon-theme",
     "ruby.lint": {
-        "rubocop": true
+        "reek": true,
+        "rubocop": true,
+        "ruby": true,
     },
     "gitlens.historyExplorer.enabled": true,
     "ctrlchar-remover.pattern": "[\\u0008]",
@@ -36,5 +38,9 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": false,
-    "csharp.format.enable": false
+    "csharp.format.enable": false,
+    "files.associations": {
+        ".gcloudignore": ".gitignore"
+    },
+    "terminal.integrated.rendererType": "dom"
 }
