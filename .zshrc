@@ -90,7 +90,7 @@ source $ZSH/oh-my-zsh.sh
 ##########
 
 # export PATH=/usr/local/bin:$PATH
-export RBENV_ROOT="$HOME/.pyenv"
+export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
 
 export PYENV_ROOT="$HOME/.pyenv"
