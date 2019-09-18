@@ -20,6 +20,7 @@ ln -sf ~/dotfiles/.bashrc ~/.bashrc
 # zsh
 mv ~/.zshrc ~/.zshrc_orig
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.zlogin ~/.zlogin
 
 
 # vscode
