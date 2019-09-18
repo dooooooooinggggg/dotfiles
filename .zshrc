@@ -99,6 +99,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+export PATH="$HOME/.goenv/bin:$PATH"
+eval "$(goenv init -)"
 
 export PATH=/usr/local/opt/openssl/bin:$PATH
 #export HOMEBREW_CASK_OPTS="—appdir=/Applications"
@@ -106,6 +108,8 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/opt/cython/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 # LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+
+# export PATH="$PATH:`yarn global bin`"
 
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
