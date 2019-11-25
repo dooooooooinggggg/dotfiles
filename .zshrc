@@ -114,14 +114,12 @@ export PATH="/usr/local/sbin:$PATH"
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 
-alias vagssh='vagrant up;vagrant ssh'
-alias allgitpull='sh ~/ShellUtil/allgitpull.sh'
 alias hellobrew='sh ~/ShellUtil/brew.sh'
 alias helloapt='sh ~/ShellUtil/apt.sh'
 alias pingcheck='sh ~/ShellUtil/pingping.sh'
-# alias ccat='pygmentize' # macにはすでに，ccatがある．
 # alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
 alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
+alias kachi='make'
 
 # settings for oh-my-zsh
 plugins=(git themes)
