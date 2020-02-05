@@ -1,5 +1,5 @@
 
-sh shells/default.sh
+sh default.sh
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 
 if [ "$(uname)" == 'Darwin' ]; then

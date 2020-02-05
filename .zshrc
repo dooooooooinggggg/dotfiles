@@ -114,9 +114,9 @@ export PATH="/usr/local/sbin:$PATH"
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 
-alias hellobrew='sh ~/ShellUtil/brew.sh'
-alias helloapt='sh ~/ShellUtil/apt.sh'
-alias pingcheck='sh ~/ShellUtil/pingping.sh'
+alias brewbrew='sh ~/dotfiles/pkg_manager/brew.sh'
+alias aptapt='sh ~/dotfiles/pkg_manager/apt.sh'
+alias pingping='sh ~/dotfiles/shells/pingping.sh'
 # alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
 alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
 alias kachi='make'
