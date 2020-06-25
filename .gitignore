@@ -1,3 +1,4 @@
 /.vim/*
 .zsh_history
 .gitconfig
+launch_chrome.sh
