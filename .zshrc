@@ -121,6 +121,7 @@ alias pingping='sh ~/dotfiles/shells/pingping.sh'
 alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
 alias kachi='make'
 alias globalip='curl http://inet-ip.info'
+alias launch_chrome='sh ~/dotfiles/launch_chrome.sh'
 
 # settings for oh-my-zsh
 plugins=(git themes)
