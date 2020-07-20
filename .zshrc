@@ -122,6 +122,7 @@ alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
 alias kachi='make'
 alias globalip='curl http://inet-ip.info'
 alias launch_chrome='sh ~/dotfiles/launch_chrome.sh'
+alias launch_money='sh ~/dotfiles/launch_money_chrome.sh'
 
 # settings for oh-my-zsh
 plugins=(git themes)
