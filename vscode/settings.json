@@ -1,59 +1,26 @@
 {
-    "sublimeTextKeymap.promptV3Features": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.snippetSuggestions": "top",
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
-    },
-    "window.zoomLevel": 1,
-    "files.trimTrailingWhitespace": true,
-    "editor.renderWhitespace": "all",
-    "workbench.iconTheme": "material-icon-theme",
-    "ruby.lint": {
-        "reek": true,
-        "rubocop": true,
-        "ruby": true,
-    },
-    "gitlens.historyExplorer.enabled": true,
-    "ctrlchar-remover.pattern": "[\\u0008]",
-    "team.showWelcomeMessage": false,
-    "materialTheme.autoApplyIcons": false,
-    "git.autofetch": true,
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "editor.renderControlCharacters": true,
-    "materialTheme.fixIconsRunning": false,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "material-icon-theme.activeIconPack": "angular",
-    "material-icon-theme.folders.color": "#90a4ae",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": false,
-    "csharp.format.enable": false,
-    "files.associations": {
-        ".gcloudignore": ".gitignore"
-    },
-    "terminal.integrated.rendererType": "dom",
-    "latex-workshop.latex.autoBuild.run": "never",
-    "ruby.format": "rubyfmt",
-    "ruby.intellisense": "rubyLocate",
-    "ruby.codeCompletion": "rcodetools",
-    "css.lint.boxModel": "warning",
-    "css.lint.idSelector": "warning",
-    "css.lint.important": "warning",
-    "[javascript]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    }
+  "ctrlchar-remover.pattern": "[\\u0008]",
+  "diffEditor.renderSideBySide": false,
+  "editor.formatOnPaste": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 4,
+  "git.autofetch": true,
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }

@@ -1,0 +1,75 @@
+{
+  "sublimeTextKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "window.zoomLevel": 1,
+  "files.trimTrailingWhitespace": true,
+  "editor.renderWhitespace": "all",
+  "workbench.iconTheme": "material-icon-theme",
+  "ruby.lint": {
+    "reek": true,
+    "rubocop": true,
+    "ruby": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "ctrlchar-remover.pattern": "[\\u0008]",
+  "team.showWelcomeMessage": false,
+  "materialTheme.autoApplyIcons": false,
+  "git.autofetch": true,
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "editor.renderControlCharacters": true,
+  "materialTheme.fixIconsRunning": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "material-icon-theme.activeIconPack": "angular",
+  "material-icon-theme.folders.color": "#90a4ae",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "csharp.format.enable": false,
+  "files.associations": {
+    ".gcloudignore": ".gitignore"
+  },
+  "terminal.integrated.rendererType": "dom",
+  "latex-workshop.latex.autoBuild.run": "never",
+  "ruby.format": "rubyfmt",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.codeCompletion": "rcodetools",
+  "css.lint.boxModel": "warning",
+  "css.lint.idSelector": "warning",
+  "css.lint.important": "warning",
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "python.languageServer": "Microsoft",
+  "editor.defaultFormatter": "vscode.configuration-editing",
+  "php-cs-fixer.allowRisky": true,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--ignore=W293, W504",
+    "--max-line-length=150",
+    "--max-complexity=20"
+  ],
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Args": ["--aggressive", "--aggressive"],
+  "autoDocstring.docstringFormat": "google"
+}
