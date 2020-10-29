@@ -22,5 +22,6 @@
   },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "python.defaultInterpreterPath": "~/.pyenv/shims/python"
 }
