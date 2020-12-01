@@ -102,14 +102,33 @@ export PATH=$PATH:$GOPATH/bin
 export PATH="$HOME/.goenv/bin:$PATH"
 eval "$(goenv init -)"
 
-export PATH=/usr/local/opt/openssl/bin:$PATH
-#export HOMEBREW_CASK_OPTS="—appdir=/Applications"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export PATH="/usr/local/opt/cython/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-# LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+if [ "$(uname -s)" = 'Darwin' ]; then
 
-# export PATH="$PATH:`yarn global bin`"
+    if [ "$(arch)" = 'i386' ]; then
+
+        export PATH="/usr/local/opt/openssl/bin:$PATH"
+        #export HOMEBREW_CASK_OPTS="—appdir=/Applications"
+        export PATH="/usr/local/opt/llvm/bin:$PATH"
+        export PATH="/usr/local/opt/cython/bin:$PATH"
+        export PATH="/usr/local/sbin:$PATH"
+        # LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+        # export PATH="$PATH:`yarn global bin`"
+
+        # The next line updates PATH for the Google Cloud SDK.
+        if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc'; fi
+
+        # The next line enables shell command completion for gcloud.
+        if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc'; fi
+
+    elif [ "$(arch)" = 'arm64' ]; then
+        export PATH="/opt/homebrew/bin:$PATH"
+    fi
+
+# elif [ "$(uname -s)" = 'Linux' ]; then
+
+fi
+
+
 
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
@@ -120,6 +139,7 @@ alias pingping='sh ~/dotfiles/shells/pingping.sh'
 # alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
 alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
 alias kachi='make'
+
 alias globalip='curl http://inet-ip.info'
 alias launch_chrome='sh ~/dotfiles/launch_chrome.sh'
 alias launch_money='sh ~/dotfiles/launch_money_chrome.sh'
@@ -135,9 +155,3 @@ compinit -u
 if [ ${ZSH_THEME} = "half-life" ]; then
     PROMPT=$'%{$purple%}%n%{$reset_color%} {%{$purple%}$HOST%{$reset_color%}} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} \nλ%{$reset_color%} ';
 fi
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc'; fi
