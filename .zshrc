@@ -122,6 +122,18 @@ if [ "$(uname -s)" = 'Darwin' ]; then
 
     elif [ "$(arch)" = 'arm64' ]; then
         export PATH="/opt/homebrew/bin:$PATH"
+        export PATH="/opt/homebrew/opt/zip/bin:$PATH"
+        export PATH="/opt/homebrew/opt/unzip/bin:$PATH"
+        export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
+        export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/ncurses/lib"
+        # export CPPFLAGS="-I/opt/homebrew/opt/ncurses/include"
+        export PKG_CONFIG_PATH="/opt/homebrew/opt/ncurses/lib/pkgconfig"
+
+        export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/binutils/lib" # binutils
+        # export CPPFLAGS="-I/opt/homebrew/opt/binutils/include" # binutils
     fi
 
 # elif [ "$(uname -s)" = 'Linux' ]; then
