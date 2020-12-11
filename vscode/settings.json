@@ -5,6 +5,9 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -35,6 +38,7 @@
     "editor.renderWhitespace": "all",
     "editor.tabSize": 4,
     "git.autofetch": true,
+    "go.useLanguageServer": true,
     "phpcs.executablePath": "/usr/bin/phpcs",
     "phpcs.standard": "PSR2",
     "python.defaultInterpreterPath": "~/.pyenv/shims/python",
