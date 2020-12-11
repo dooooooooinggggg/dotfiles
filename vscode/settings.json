@@ -45,11 +45,6 @@
     "python.linting.flake8Enabled": true,
     "window.zoomLevel": 0,
     "workbench.colorTheme": "GitHub Dark",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": [],
     "workbench.iconTheme": "material-icon-theme"
 }
