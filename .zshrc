@@ -146,7 +146,7 @@ eval "$(rbenv init -)"
 
 alias pingping='sh ~/dotfiles/shells/pingping.sh'
 # alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
-alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
+alias sloppycommit='git pull;git add .;git commit -m "Commit";git push'
 alias kachi='make'
 
 alias globalip='curl http://inet-ip.info'
