@@ -70,6 +70,9 @@
     "--max-complexity=20"
   ],
   "python.formatting.provider": "autopep8",
-  "python.formatting.autopep8Args": ["--aggressive", "--aggressive"],
+  "python.formatting.autopep8Args": [
+    "--aggressive",
+    "--aggressive"
+  ],
   "autoDocstring.docstringFormat": "google"
 }
