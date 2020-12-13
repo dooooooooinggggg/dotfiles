@@ -1,53 +1,53 @@
 {
-    "[c]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[go]": {
-        "editor.defaultFormatter": "golang.go"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "ctrlchar-remover.pattern": "[\\u0008]",
-    "diffEditor.renderSideBySide": false,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.renderControlCharacters": true,
-    "editor.renderLineHighlight": "all",
-    "editor.renderWhitespace": "all",
-    "editor.tabSize": 4,
-    "git.autofetch": true,
-    "go.useLanguageServer": true,
-    "phpcs.executablePath": "/usr/bin/phpcs",
-    "phpcs.standard": "PSR2",
-    "python.defaultInterpreterPath": "~/.pyenv/shims/python",
-    "python.linting.flake8Enabled": true,
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "GitHub Dark",
-    "workbench.editorAssociations": [],
-    "workbench.iconTheme": "material-icon-theme",
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "ctrlchar-remover.pattern": "[\\u0008]",
+  "diffEditor.renderSideBySide": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 4,
+  "git.autofetch": true,
+  "go.useLanguageServer": true,
+  "phpcs.executablePath": "/usr/bin/phpcs",
+  "phpcs.standard": "PSR2",
+  "python.defaultInterpreterPath": "~/.pyenv/shims/python",
+  "python.linting.flake8Enabled": true,
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.editorAssociations": [],
+  "workbench.iconTheme": "material-icon-theme",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
