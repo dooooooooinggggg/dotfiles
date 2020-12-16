@@ -7,7 +7,6 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="half-life"
 ZSH_THEME="gnzh"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -122,6 +121,18 @@ if [ "$(uname -s)" = 'Darwin' ]; then
 
     elif [ "$(arch)" = 'arm64' ]; then
         export PATH="/opt/homebrew/bin:$PATH"
+        export PATH="/opt/homebrew/opt/zip/bin:$PATH"
+        export PATH="/opt/homebrew/opt/unzip/bin:$PATH"
+        export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
+        export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/ncurses/lib"
+        # export CPPFLAGS="-I/opt/homebrew/opt/ncurses/include"
+        export PKG_CONFIG_PATH="/opt/homebrew/opt/ncurses/lib/pkgconfig"
+
+        export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/binutils/lib" # binutils
+        # export CPPFLAGS="-I/opt/homebrew/opt/binutils/include" # binutils
     fi
 
 # elif [ "$(uname -s)" = 'Linux' ]; then
@@ -133,16 +144,12 @@ fi
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 
-alias brewbrew='sh ~/dotfiles/pkg_manager/brew.sh'
-alias aptapt='sh ~/dotfiles/pkg_manager/apt.sh'
 alias pingping='sh ~/dotfiles/shells/pingping.sh'
 # alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
-alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
+alias sloppycommit='git pull;git add .;git commit -m "Commit";git push'
 alias kachi='make'
 
 alias globalip='curl http://inet-ip.info'
-alias launch_chrome='sh ~/dotfiles/launch_chrome.sh'
-alias launch_money='sh ~/dotfiles/launch_money_chrome.sh'
 
 # settings for oh-my-zsh
 plugins=(git themes)

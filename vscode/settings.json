@@ -5,6 +5,9 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -26,6 +29,9 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
@@ -38,17 +44,13 @@
   "editor.renderWhitespace": "all",
   "editor.tabSize": 4,
   "git.autofetch": true,
+  "go.useLanguageServer": true,
   "phpcs.executablePath": "/usr/bin/phpcs",
   "phpcs.standard": "PSR2",
   "python.defaultInterpreterPath": "~/.pyenv/shims/python",
   "python.linting.flake8Enabled": true,
   "window.zoomLevel": 0,
   "workbench.colorTheme": "GitHub Dark",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": [],
   "workbench.iconTheme": "material-icon-theme"
 }
