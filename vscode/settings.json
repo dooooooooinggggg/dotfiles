@@ -1,48 +1,54 @@
 {
-  "ctrlchar-remover.pattern": "[\\u0008]",
-  "diffEditor.renderSideBySide": false,
-  "editor.formatOnPaste": true,
-  "editor.renderControlCharacters": true,
-  "editor.renderLineHighlight": "all",
-  "editor.renderWhitespace": "all",
-  "editor.tabSize": 4,
-  "git.autofetch": true,
-  "window.zoomLevel": 0,
-  "workbench.colorTheme": "GitHub Dark",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.formatOnSave": true,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "python.defaultInterpreterPath": "~/.pyenv/shims/python",
-  "python.linting.flake8Enabled": true,
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "phpcs.standard": "PSR2",
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "ctrlchar-remover.pattern": "[\\u0008]",
+  "diffEditor.renderSideBySide": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 4,
+  "git.autofetch": true,
   "phpcs.executablePath": "/usr/bin/phpcs",
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
+  "phpcs.standard": "PSR2",
+  "python.defaultInterpreterPath": "~/.pyenv/shims/python",
+  "python.linting.flake8Enabled": true,
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.editorAssociations": [
     {
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
-  ]
+  ],
+  "workbench.iconTheme": "material-icon-theme"
 }
