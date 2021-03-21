@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # export #
 ##########
 
-# export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
 
@@ -135,8 +135,8 @@ if [ "$(uname -s)" = 'Darwin' ]; then
         # export CPPFLAGS="-I/opt/homebrew/opt/binutils/include" # binutils
     fi
 
-# elif [ "$(uname -s)" = 'Linux' ]; then
-
+elif [ "$(uname -s)" = 'Linux' ]; then
+    export PATH="$HOME/.npm/bin:$PATH"
 fi
 
 
