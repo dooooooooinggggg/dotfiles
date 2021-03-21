@@ -1,4 +1,7 @@
 {
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -7,6 +10,9 @@
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -32,9 +38,15 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "cSpell.enableFiletypes": [
+    "!python"
+  ],
   "ctrlchar-remover.pattern": "[\\u0008]",
   "diffEditor.renderSideBySide": false,
   "editor.formatOnPaste": true,
@@ -42,15 +54,28 @@
   "editor.renderControlCharacters": true,
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
   "editor.tabSize": 4,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
   "git.autofetch": true,
+  "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
   "phpcs.executablePath": "/usr/bin/phpcs",
   "phpcs.standard": "PSR2",
   "python.defaultInterpreterPath": "~/.pyenv/shims/python",
   "python.linting.flake8Enabled": true,
-  "window.zoomLevel": 0,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.colorTheme": "GitHub Dark",
-  "workbench.editorAssociations": [],
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
   "workbench.iconTheme": "material-icon-theme"
 }
