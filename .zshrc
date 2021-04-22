@@ -137,6 +137,13 @@ if [ "$(uname -s)" = 'Darwin' ]; then
 
 elif [ "$(uname -s)" = 'Linux' ]; then
     export PATH="$HOME/.npm/bin:$PATH"
+    export CLOUDSDK_PYTHON=/home/tatsunori/.pyenv/shims/python3
+
+    # The next line updates PATH for the Google Cloud SDK.
+    if [ -f '/home/tatsunori/storage/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tatsunori/storage/gcloud/google-cloud-sdk/path.zsh.inc'; fi
+
+    # The next line enables shell command completion for gcloud.
+    if [ -f '/home/tatsunori/storage/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tatsunori/storage/gcloud/google-cloud-sdk/completion.zsh.inc'; fi
 fi
 
 
@@ -162,3 +169,5 @@ compinit -u
 if [ ${ZSH_THEME} = "half-life" ]; then
     PROMPT=$'%{$purple%}%n%{$reset_color%} {%{$purple%}$HOST%{$reset_color%}} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} \nλ%{$reset_color%} ';
 fi
+
+alias v191='source /opt/Xilinx/Vivado_Lab/2019.1/settings64.sh;sudo chmod o-rw /var/run/dbus/system_bus_socket;sudo chmod -R a+w /dev/bus/usb;unset GNOME_DESKTOP_SESSION_ID'
