@@ -171,3 +171,5 @@ compinit -u
 if [ ${ZSH_THEME} = "half-life" ]; then
     PROMPT=$'%{$purple%}%n%{$reset_color%} {%{$purple%}$HOST%{$reset_color%}} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} \nλ%{$reset_color%} ';
 fi
+
+alias v191='source /opt/Xilinx/Vivado_Lab/2019.1/settings64.sh;sudo chmod o-rw /var/run/dbus/system_bus_socket;sudo chmod -R a+w /dev/bus/usb;unset GNOME_DESKTOP_SESSION_ID'
