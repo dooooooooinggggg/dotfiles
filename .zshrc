@@ -7,7 +7,6 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="half-life"
 ZSH_THEME="gnzh"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -89,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # export #
 ##########
 
-# export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
 
@@ -102,24 +101,62 @@ export PATH=$PATH:$GOPATH/bin
 export PATH="$HOME/.goenv/bin:$PATH"
 eval "$(goenv init -)"
 
-export PATH=/usr/local/opt/openssl/bin:$PATH
-#export HOMEBREW_CASK_OPTS="—appdir=/Applications"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export PATH="/usr/local/opt/cython/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-# LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+if [ "$(uname -s)" = 'Darwin' ]; then
 
-# export PATH="$PATH:`yarn global bin`"
+    if [ "$(arch)" = 'i386' ]; then
+
+        export PATH="/usr/local/opt/openssl/bin:$PATH"
+        #export HOMEBREW_CASK_OPTS="—appdir=/Applications"
+        export PATH="/usr/local/opt/llvm/bin:$PATH"
+        export PATH="/usr/local/opt/cython/bin:$PATH"
+        export PATH="/usr/local/sbin:$PATH"
+        # LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+        # export PATH="$PATH:`yarn global bin`"
+
+        # The next line updates PATH for the Google Cloud SDK.
+        if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc'; fi
+
+        # The next line enables shell command completion for gcloud.
+        if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc'; fi
+
+    elif [ "$(arch)" = 'arm64' ]; then
+        export PATH="/opt/homebrew/bin:$PATH"
+        export PATH="/opt/homebrew/opt/zip/bin:$PATH"
+        export PATH="/opt/homebrew/opt/unzip/bin:$PATH"
+        export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
+        export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/ncurses/lib"
+        # export CPPFLAGS="-I/opt/homebrew/opt/ncurses/include"
+        export PKG_CONFIG_PATH="/opt/homebrew/opt/ncurses/lib/pkgconfig"
+
+        export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/binutils/lib" # binutils
+        # export CPPFLAGS="-I/opt/homebrew/opt/binutils/include" # binutils
+    fi
+
+elif [ "$(uname -s)" = 'Linux' ]; then
+    export PATH="$HOME/.npm/bin:$PATH"
+    export CLOUDSDK_PYTHON=/home/tatsunori/.pyenv/shims/python3
+
+    # The next line updates PATH for the Google Cloud SDK.
+    if [ -f '/home/tatsunori/storage/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tatsunori/storage/gcloud/google-cloud-sdk/path.zsh.inc'; fi
+
+    # The next line enables shell command completion for gcloud.
+    if [ -f '/home/tatsunori/storage/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tatsunori/storage/gcloud/google-cloud-sdk/completion.zsh.inc'; fi
+fi
+
+
 
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 
-alias hellobrew='sh ~/ShellUtil/brew.sh'
-alias helloapt='sh ~/ShellUtil/apt.sh'
-alias pingcheck='sh ~/ShellUtil/pingping.sh'
+alias pingping='sh ~/dotfiles/shells/pingping.sh'
 # alias brew="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
-alias sloppycommit='git pull;git add .;git commit -m "Sloppy Commit";git push'
+alias sloppycommit='git pull;git add .;git commit -m "Commit";git push'
 alias kachi='make'
+
+alias globalip='curl http://inet-ip.info'
 
 # settings for oh-my-zsh
 plugins=(git themes)
@@ -133,11 +170,4 @@ if [ ${ZSH_THEME} = "half-life" ]; then
     PROMPT=$'%{$purple%}%n%{$reset_color%} {%{$purple%}$HOST%{$reset_color%}} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} \nλ%{$reset_color%} ';
 fi
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc'; fi
-
 alias v191='source /opt/Xilinx/Vivado_Lab/2019.1/settings64.sh;sudo chmod o-rw /var/run/dbus/system_bus_socket;sudo chmod -R a+w /dev/bus/usb;unset GNOME_DESKTOP_SESSION_ID'
-

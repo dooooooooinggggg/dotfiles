@@ -1,28 +1,3 @@
-
-sh shells/default.sh
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-
-if [ "$(uname)" == 'Darwin' ]; then
-  sh pkg_manager_init/init_brew.sh
-  sh pkg_manager_init/init_brew_cask.sh
-elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
-  sh pkg_manager_init/aptlist.sh
-fi
-
-# gdb
-ln -sf ~/dotfiles/.gdbinit ~/
-
-#bash
-mv ~/.bash_profile ~/.bash_profile_orig
-mv ~/.bashrc ~/.bashrc_orig
-ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
-ln -sf ~/dotfiles/.bashrc ~/.bashrc
-# zsh
-mv ~/.zshrc ~/.zshrc_orig
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.zlogin ~/.zlogin
-
-
 # vscode
 if [ "$(uname)" == 'Darwin' ]; then
   # extensions=$(cat vscode/plugins)
