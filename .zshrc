@@ -137,6 +137,8 @@ if [ "$(uname -s)" = 'Darwin' ]; then
 
 elif [ "$(uname -s)" = 'Linux' ]; then
     export PATH="$HOME/.npm/bin:$PATH"
+    export PATH="/usr/sbin:$PATH"
+
     export CLOUDSDK_PYTHON=/home/tatsunori/.pyenv/shims/python3
 
     # The next line updates PATH for the Google Cloud SDK.
