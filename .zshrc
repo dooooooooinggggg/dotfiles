@@ -138,3 +138,6 @@ if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc' ]; then . '/Use
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc'; fi
+
+alias v191='source /opt/Xilinx/Vivado_Lab/2019.1/settings64.sh;sudo chmod o-rw /var/run/dbus/system_bus_socket;sudo chmod -R a+w /dev/bus/usb;unset GNOME_DESKTOP_SESSION_ID'
+

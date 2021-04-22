@@ -26,7 +26,7 @@
     "team.showWelcomeMessage": false,
     "materialTheme.autoApplyIcons": false,
     "git.autofetch": true,
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
     "editor.renderControlCharacters": true,
     "materialTheme.fixIconsRunning": false,
     "editor.formatOnPaste": true,
