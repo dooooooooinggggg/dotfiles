@@ -159,6 +159,7 @@ alias sloppycommit='git pull;git add .;git commit -m "Commit";git push'
 alias kachi='make'
 
 alias globalip='curl http://inet-ip.info'
+alias youtube-dl-mp3='youtube-dl -x --audio-format mp3 '
 
 # settings for oh-my-zsh
 plugins=(git themes)
