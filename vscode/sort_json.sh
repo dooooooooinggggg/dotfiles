@@ -1,4 +1,4 @@
 touch tmp.json
-python --version
-python sort_json.py settings.json > tmp.json
+python3 --version
+python3 sort_json.py settings.json > tmp.json
 cat tmp.json > settings.json
