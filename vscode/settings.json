@@ -8,6 +8,9 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
@@ -17,8 +20,11 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -42,7 +48,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -68,6 +74,10 @@
   "git.autofetch": true,
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
   "phpcs.executablePath": "/usr/bin/phpcs",
   "phpcs.standard": "PSR2",
   "python.defaultInterpreterPath": "~/.pyenv/shims/python",
@@ -77,7 +87,7 @@
   "window.zoomLevel": 1,
   "workbench.colorTheme": "GitHub Dark",
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "material-icon-theme"
 }
