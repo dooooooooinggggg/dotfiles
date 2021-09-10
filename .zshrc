@@ -133,6 +133,7 @@ if [ "$(uname -s)" = 'Darwin' ]; then
         export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
         # export LDFLAGS="-L/opt/homebrew/opt/binutils/lib" # binutils
         # export CPPFLAGS="-I/opt/homebrew/opt/binutils/include" # binutils
+        export PATH="/opt/homebrew/sbin:$PATH"
     fi
 
 elif [ "$(uname -s)" = 'Linux' ]; then
