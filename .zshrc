@@ -134,6 +134,12 @@ if [ "$(uname -s)" = 'Darwin' ]; then
         # export LDFLAGS="-L/opt/homebrew/opt/binutils/lib" # binutils
         # export CPPFLAGS="-I/opt/homebrew/opt/binutils/include" # binutils
         export PATH="/opt/homebrew/sbin:$PATH"
+
+        # The next line updates PATH for the Google Cloud SDK.
+        if [ -f '/Users/tatsunori/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tatsunori/google-cloud-sdk/path.zsh.inc'; fi
+        # The next line enables shell command completion for gcloud.
+        if [ -f '/Users/tatsunori/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tatsunori/google-cloud-sdk/completion.zsh.inc'; fi
+
     fi
 
 elif [ "$(uname -s)" = 'Linux' ]; then
