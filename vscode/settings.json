@@ -65,6 +65,7 @@
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
   "editor.tabSize": 4,
+  "editor.unicodeHighlight.nonBasicASCII": false,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
