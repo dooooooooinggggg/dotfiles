@@ -142,6 +142,9 @@ elif [ "$(uname -s)" = 'Linux' ]; then
 
     export CLOUDSDK_PYTHON=/home/tatsunori/.pyenv/shims/python3
 
+    export PATH="/home/tatsunori/.local/bin:$PATH"
+    export PATH="/home/tatsunori/Android/platform-tools:$PATH"
+
     # The next line updates PATH for the Google Cloud SDK.
     if [ -f '/home/tatsunori/storage/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tatsunori/storage/gcloud/google-cloud-sdk/path.zsh.inc'; fi
 
