@@ -65,6 +65,7 @@
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
   "editor.tabSize": 4,
+  "editor.unicodeHighlight.nonBasicASCII": false,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -80,7 +81,7 @@
   },
   "phpcs.executablePath": "/usr/bin/phpcs",
   "phpcs.standard": "PSR2",
-  "python.defaultInterpreterPath": "~/.pyenv/shims/python",
+  "python.defaultInterpreterPath": "/opt/homebrew/opt/python@3.9/bin/python3.9",
   "python.linting.flake8Enabled": true,
   "python.pythonPath": "/opt/homebrew/opt/python@3.9/bin/python3.9",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
