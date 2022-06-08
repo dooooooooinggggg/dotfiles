@@ -123,13 +123,26 @@ if [ "$(uname -s)" = 'Darwin' ]; then
         export PATH="/opt/homebrew/opt/zip/bin:$PATH"
         export PATH="/opt/homebrew/opt/unzip/bin:$PATH"
         export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
         export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/ncurses/lib"
+        # export CPPFLAGS="-I/opt/homebrew/opt/ncurses/include"
+        export PKG_CONFIG_PATH="/opt/homebrew/opt/ncurses/lib/pkgconfig"
 
         export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/binutils/lib" # binutils
+        # export CPPFLAGS="-I/opt/homebrew/opt/binutils/include" # binutils
         export PATH="/opt/homebrew/sbin:$PATH"
 
         export PATH="/opt/homebrew/opt/zlib/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
+        # export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
+        # export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
         export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+        # export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
+        # export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
+        # export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"
+
         # The next line updates PATH for the Google Cloud SDK.
         if [ -f "/Users/$(whoami)/google-cloud-sdk/path.zsh.inc" ]; then . "/Users/$(whoami)/google-cloud-sdk/path.zsh.inc"; fi
         # The next line enables shell command completion for gcloud.
