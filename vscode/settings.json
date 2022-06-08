@@ -85,10 +85,10 @@
   "python.linting.flake8Enabled": true,
   "python.pythonPath": "/opt/homebrew/opt/python@3.9/bin/python3.9",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "window.zoomLevel": 1,
   "workbench.colorTheme": "GitHub Dark",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 1
 }
