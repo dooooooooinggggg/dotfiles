@@ -33,9 +33,8 @@ eval "$(rbenv init -)"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
 export PATH=/usr/local/opt/openssl/bin:$PATH
+export PATH="$HOME/.cargo/bin:$PATH"
 
 neofetch
 
-export PATH="$HOME/.cargo/bin:$PATH"
