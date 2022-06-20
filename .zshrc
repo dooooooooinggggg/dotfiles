@@ -113,10 +113,10 @@ if [ "$(uname -s)" = 'Darwin' ]; then
         # export PATH="$PATH:`yarn global bin`"
 
         # The next line updates PATH for the Google Cloud SDK.
-        if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/path.zsh.inc'; fi
+        if [ -f '/Users/$(whoami)/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/$(whoami)/google-cloud-sdk/path.zsh.inc'; fi
 
         # The next line enables shell command completion for gcloud.
-        if [ -f '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ishikawatatsunori/google-cloud-sdk/completion.zsh.inc'; fi
+        if [ -f '/Users/$(whoami)/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/$(whoami)/google-cloud-sdk/completion.zsh.inc'; fi
 
     elif [ "$(arch)" = 'arm64' ]; then
         export PATH="/opt/homebrew/bin:$PATH"
@@ -152,16 +152,16 @@ elif [ "$(uname -s)" = 'Linux' ]; then
     export PATH="$HOME/.npm/bin:$PATH"
     export PATH="/usr/sbin:$PATH"
 
-    export CLOUDSDK_PYTHON=/home/tatsunori/.pyenv/shims/python3
+    export CLOUDSDK_PYTHON=/home/$(whoami)/.pyenv/shims/python3
 
-    export PATH="/home/tatsunori/.local/bin:$PATH"
-    export PATH="/home/tatsunori/Android/platform-tools:$PATH"
+    export PATH="/home/$(whoami)/.local/bin:$PATH"
+    export PATH="/home/$(whoami)/Android/platform-tools:$PATH"
 
     # The next line updates PATH for the Google Cloud SDK.
-    if [ -f '/home/tatsunori/storage/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tatsunori/storage/gcloud/google-cloud-sdk/path.zsh.inc'; fi
+    if [ -f '/home/$(whoami)/storage/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/home/$(whoami)/storage/gcloud/google-cloud-sdk/path.zsh.inc'; fi
 
     # The next line enables shell command completion for gcloud.
-    if [ -f '/home/tatsunori/storage/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tatsunori/storage/gcloud/google-cloud-sdk/completion.zsh.inc'; fi
+    if [ -f '/home/$(whoami)/storage/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/$(whoami)/storage/gcloud/google-cloud-sdk/completion.zsh.inc'; fi
 
     alias v191='source /opt/Xilinx/Vivado_Lab/2019.1/settings64.sh;sudo chmod o-rw /var/run/dbus/system_bus_socket;sudo chmod -R a+w /dev/bus/usb;unset GNOME_DESKTOP_SESSION_ID'
 fi
@@ -185,7 +185,7 @@ alias youtube-dl-mp3='youtube-dl -x --audio-format mp3 '
 plugins=(git themes)
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
-# 補完を効かせるためのもの
+# 補完
 autoload -U compinit
 compinit -u
 
