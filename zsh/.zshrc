@@ -17,17 +17,22 @@ fi
 ##########
 
 export PATH=/usr/local/bin:$PATH
+
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
+export PYTHONPATH=./site-packages
+
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 export PATH="$HOME/.goenv/bin:$PATH"
 eval "$(goenv init -)"
+
+export PATH="$HOME/.poetry/bin:$PATH"
 
 if [ "$(uname -s)" = 'Darwin' ]; then
 
