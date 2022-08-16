@@ -31,8 +31,6 @@ export PATH=$PATH:$GOPATH/bin
 
 export PATH="$HOME/.goenv/bin:$PATH"
 
-export PATH="$HOME/.poetry/bin:$PATH"
-
 eval "$(goenv init -)"
 
 export PATH="$HOME/.poetry/bin:$PATH"
