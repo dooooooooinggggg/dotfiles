@@ -30,6 +30,9 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 export PATH="$HOME/.goenv/bin:$PATH"
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
 eval "$(goenv init -)"
 
 export PATH="$HOME/.poetry/bin:$PATH"
@@ -68,8 +71,8 @@ if [ "$(uname -s)" = 'Darwin' ]; then
         export PATH="/opt/homebrew/sbin:$PATH"
 
         export PATH="/opt/homebrew/opt/zlib/bin:$PATH"
-        # export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
-        # export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
+        export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
+        export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
         # export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
         export PATH="/opt/homebrew/opt/curl/bin:$PATH"
         # export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
