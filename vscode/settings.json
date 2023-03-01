@@ -36,7 +36,8 @@
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -90,5 +91,7 @@
     "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": 1
+  "gitlens.defaultDateStyle": "absolute",
+  "gitlens.defaultDateLocale": "ja-JP",
+  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:MM:ss",
 }
