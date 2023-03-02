@@ -36,7 +36,8 @@
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
