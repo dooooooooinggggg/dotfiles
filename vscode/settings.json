@@ -91,5 +91,7 @@
     "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": 1
+  "gitlens.defaultDateStyle": "absolute",
+  "gitlens.defaultDateLocale": "ja-JP",
+  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:MM:ss",
 }
